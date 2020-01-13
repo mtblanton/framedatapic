@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Frame data pic maker</title>
+    <meta name="description" content="Make a frame data pic" />
+    <meta name="author" content="Taylor Blanton" />
+
+    <link rel="stylesheet" href="styles.css?v=1.0" />
+  </head>
+
+  <body>
+    <script src="js/scripts.js"></script>
+    <form action="makePicture()" id="inputs">
+      <fieldset>
+        <label for="startup">Startup</label>
+        <input type="text" id="startup" />
+      </fieldset>
+      <fieldset>
+        <label for="active">Active</label>
+        <input type="text" id="active" />
+      </fieldset>
+      <fieldset>
+        <label for="recovery">Recovery</label>
+        <input type="text" id="recovery" />
+      </fieldset>
+
+      <div id="image">
+        <div id="start"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame"></div>
+        <div class="frame active-frame" style="grid-column: 7 / 8"></div>
+        <div class="frame active-frame" style="grid-column: 8 / 9"></div>
+
+        <div class="border first-border" style="grid-column: 7 / 8"></div>
+        <div class="border first-border" style="grid-column: 12 / 13"></div>
+        <div class="border first-border" style="grid-column: 17 / 18"></div>
+
+        <div class="border second-border" style="grid-column: 7 / 8"></div>
+        <div class="border second-border" style="grid-column: 12 / 13"></div>
+        <div class="border second-border" style="grid-column: 17 / 18"></div>
+
+        <div class="border third-border" style="grid-column: 7 / 8"></div>
+        <div class="border third-border" style="grid-column: 12 / 13"></div>
+        <div class="border third-border" style="grid-column: 17 / 18"></div>
+
+        <div class="border fourth-border" style="grid-column: 7 / 8"></div>
+        <div class="border fourth-border" style="grid-column: 12 / 13"></div>
+        <div class="border fourth-border" style="grid-column: 17 / 18"></div>
+
+        <div class="border fifth-border" style="grid-column: 7 / 8"></div>
+        <div class="border fifth-border" style="grid-column: 12 / 13"></div>
+        <div class="border fifth-border" style="grid-column: 17 / 18"></div>
+      </div>
+
+      <img src="./SG_msf_slp_fd.png" alt="" srcset="" style="background-color: black; margin-top: 1px;">
+    </form>
+  </body>
+</html>
