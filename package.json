@@ -1,0 +1,15 @@
+{
+  "name": "framedatapic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "sass:watch",
+    "sass:watch": "sass --watch styles/index.scss styles/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.24.4"
+  }
+}

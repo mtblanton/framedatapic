@@ -1,0 +1,62 @@
+.active-frame.throw-frame, .active-frame, .vulnerability-frame {
+  margin-left: 1px;
+}
+
+.vulnerability-frame {
+  background-color: #00dc32;
+  --vulnerability-frame-row: 4 / 5;
+  grid-row: var(--vulnerability-frame-row);
+}
+
+.active-frame {
+  background-color: #ff0000;
+  --active-frame-row: 2 / 3;
+  grid-row: var(--active-frame-row);
+}
+
+.active-frame.throw-frame {
+  background-color: green;
+}
+
+.border {
+  border-left: 1px solid #c3c3c4;
+}
+
+.first-border {
+  grid-row: 1/2;
+}
+
+.second-border {
+  grid-row: 3/4;
+}
+
+.third-border {
+  grid-row: 5/6;
+}
+
+.fourth-border {
+  grid-row: 7/8;
+}
+
+.fifth-border {
+  grid-row: 9/10;
+}
+
+#image {
+  background-color: black;
+  width: min-content;
+  padding: 2px 3px 0 3px;
+  display: grid;
+  grid-template-rows: repeat(5, 3px 5px);
+  --total-frames: 20;
+  grid-template-columns: repeat(var(--total-frames), 6px);
+}
+
+#start {
+  width: 5px;
+  background-color: white;
+  grid-row: 2/-2;
+  margin-left: 1px;
+}
+
+/*# sourceMappingURL=index.css.map */
