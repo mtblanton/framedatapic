@@ -2,14 +2,21 @@
   "name": "framedatapic",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "browser": "scripts/makePicture.js",
   "scripts": {
     "start": "sass:watch",
+    "rollup:watch": "rollup -w --config",
     "sass:watch": "sass --watch styles/index.scss styles/index.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.29.0",
     "sass": "^1.24.4"
+  },
+  "dependencies": {
+    "html-to-image": "^0.1.1"
   }
 }
