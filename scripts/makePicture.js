@@ -88,13 +88,15 @@ export async function createImage() {
   const imageSource = $('#image');
   const prevColor = imageSource.style.backgroundColor;
 
+  const generatedImageLocation = $('#generated-image');
+
   imageSource.style.backgroundColor = 'transparent';
 
   const imageData = await toSvgDataURL(imageSource);
   imageSource.style.backgroundColor = prevColor;
   const image = new Image();
   image.src = imageData;
-  document.body.appendChild(image);
+  generatedImageLocation.appendChild(image);
 }
 
 export function makePicture() {

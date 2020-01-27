@@ -911,13 +911,15 @@ var frameDataPic = (function (exports) {
 	  const imageSource = $('#image');
 	  const prevColor = imageSource.style.backgroundColor;
 
+	  const generatedImageLocation = $('#generated-image');
+
 	  imageSource.style.backgroundColor = 'transparent';
 
 	  const imageData = await lib_1(imageSource);
 	  imageSource.style.backgroundColor = prevColor;
 	  const image = new Image();
 	  image.src = imageData;
-	  document.body.appendChild(image);
+	  generatedImageLocation.appendChild(image);
 	}
 
 	function makePicture() {
