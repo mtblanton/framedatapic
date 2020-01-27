@@ -1,5 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import replaceHtmlVars from 'rollup-plugin-replace-html-vars';
 
 export default {
   input: 'scripts/makePicture.js',
@@ -10,5 +11,10 @@ export default {
     sourcemap: 'true'
   },
   browser: true,
-  plugins: [resolve(), commonjs()]
+  plugins: [resolve(), commonjs(),
+  replaceHtmlVars({
+    files: 'static/index.html',
+    from: /\${timestamp}/g,
+    to: Date.now()
+  })]
 }
