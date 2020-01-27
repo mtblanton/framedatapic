@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Frame data pic maker</title>
+    <meta name="description" content="Make a frame data pic" />
+    <meta name="author" content="Taylor Blanton" />
+
+    <link rel="stylesheet" href="styles/index.css?v=1.0" />
+  </head>
+
+  <body>
+    <script src="bundle.js"></script>
+
+    <a href="http://wiki.mizuumi.net/w/Skullgirls/Game_Data_Key" target="_blank"
+      >Reference</a
+    >
+    <form id="inputs">
+      <label for="startup">Startup</label>
+      <input type="text" name="startup" />
+
+      <label for="active">Active</label>
+      <input type="text" name="active" />
+
+      <label for="recovery">Recovery</label>
+      <input type="text" name="recovery" />
+      <button type="button" onclick="frameDataPic.makePicture()">Generate Image</button>
+      <button type="button" onclick="frameDataPic.createImage()">Create Image</button>
+    </form>
+
+    <div id="image" class="image"></div>
+
+    <img
+      src="./SG_msf_slp_fd.png"
+      style="background-color: black; margin-top: 1px;"
+    />
+  </body>
+</html>
