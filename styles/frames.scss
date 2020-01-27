@@ -9,6 +9,10 @@
 
   --vulnerability-frame-row: 4 / 5;
   grid-row: var(--vulnerability-frame-row);
+
+  .armor-frame {
+    background-color: #bfbfd4
+  }
 }
 
 .active-frame {
@@ -17,11 +21,10 @@
 
   --active-frame-row: 2 / 3;
   grid-row: var(--active-frame-row);
-}
 
-.active-frame.throw-frame {
-  @extend %frame;
-  background-color: green;
+  .throw-frame {
+    background-color: #ff00ff;
+  }
 }
 
 .border {

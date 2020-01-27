@@ -931,7 +931,7 @@ var frameDataPic = (function (exports) {
 	  const recovery = parseInt(inputs.get('recovery').toString());
 
 	  const totalFrames = startup + active + recovery;
-	  document.documentElement.style.setProperty('--total-frames', totalFrames + 1);
+	  document.documentElement.style.setProperty('--total-frames', (totalFrames + 1).toString());
 
 	  generateVulnerabilityFrames(totalFrames);
 	  generateBorders(totalFrames);

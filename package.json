@@ -6,10 +6,11 @@
   "scripts": {
     "start": "sass:watch",
     "rollup:watch": "rollup -w --config",
-    "sass:watch": "sass --watch styles/index.scss styles/index.css"
+    "sass:watch": "sass --watch styles/index.scss static/index.css",
+    "build": "rollup --config && sass styles/index.scss static/index.css"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "mtblanton",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",

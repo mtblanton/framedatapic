@@ -4,7 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 export default {
   input: 'scripts/makePicture.js',
   output: {
-    file: 'bundle.js',
+    file: 'static/bundle.js',
     format: 'iife',
     name: 'frameDataPic',
     sourcemap: 'true'

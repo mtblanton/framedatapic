@@ -1,4 +1,4 @@
-.active-frame.throw-frame, .active-frame, .vulnerability-frame {
+.armor-frame, .active-frame.throw-frame, .active-frame, .vulnerability-frame {
   margin-left: 1px;
 }
 
@@ -16,6 +16,10 @@
 
 .active-frame.throw-frame {
   background-color: green;
+}
+
+.armor-frame {
+  background-color: #bfbfd4;
 }
 
 .border {
